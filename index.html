@@ -1,10 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Арена "CYBEROMSK"</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    </head>
+    <body>
+        <div class="background" id="background"></div>
+        <header>
+            <div class="container mx-auto">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12">
+                        <nav class="py-4">
+                            <div class="flex justify-between font-medium uppercase">
+                                <a class="block h-fit my-auto" href="">о клубе</a>
+                                <a class="block h-fit my-auto" href="">premium</a>
+                                <img src="img/logo_nav.svg" alt="nav_logo">
+                                <a class="block h-fit my-auto" href="">как добраться</a>
+                                <a class="block h-fit my-auto" href="">контакты</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="mt-8">
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-12">
+                        <div class="col-start-2 col-end-12 bg-gray-500 video">
+                            <img class="left-16" src="img/logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-8">
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-12">
+                        <div class="col-start-2 col-end-7">
+                            <div class="about mx-auto">
+                                <h1 class="uppercase font-black text-2xl absolute bottom-6 left-24">о клубе</h1>
+                            </div>
+                            <p class="font-light mt-8">Это уникальный, киберспортивный проект, с многолетним опытом управления<br>компьютерными клубами и организации киберспортивных мероприятий. Данное сообщество организовано для популяризации киберспортивной тематики на наших просторах. Арена Cyberomsk является лучшей специализированной киперспортивной площадкой, оснащенной самыми современными компьютерами, которые удовлетворят запросы самого искушенного посетителя.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-12">
+                            <div class="games_zone mx-auto mt-36 mx-auto">
+                                <h1 class="uppercase font-black text-2xl absolute top-7 left-16">игровые зоны</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="map"></div>
+            </section>
+        </main>
 
-</body>
+        <script src="js/index.js"></script>
+    </body>
 </html>
