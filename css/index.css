@@ -19,7 +19,7 @@ body {
 .background {
     max-width: 1920px;
     height: 2764px;
-    background-image: url("../img/bg.png");
+    background-image: url("../img/bg.webp");
     background-repeat: no-repeat;
     background-position: top center;
     background-position-y: -95px;
@@ -50,7 +50,7 @@ body {
 }
 
 .about {
-    background-image: url("../img/about_bg.png");
+    background-image: url("../img/about_bg.webp");
     background-repeat: no-repeat;
     width: 350px;
     height: 125px;
@@ -60,7 +60,7 @@ body {
 .games_zone {
     width: 390px;
     height: 130px;
-    background-image: url("../img/games_zone_bg.png");
+    background-image: url("../img/games_zone_bg.webp");
     background-repeat: no-repeat;
     color: #2A2A2A;
     position: relative;
@@ -135,7 +135,7 @@ body {
 }
 
 .arrival {
-    background-image: url("../img/arrival_bg.png");
+    background-image: url("../img/arrival_bg.webp");
     background-repeat: no-repeat;
     width: 130px;
     height: 390px;
