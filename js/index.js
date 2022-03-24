@@ -1,12 +1,12 @@
 (function () {
 
-    document.querySelector('#background').style.height = window.outerWidth + 'px'
-
     DG.then(function () {
-        DG.map('map', {
-            center: [54.98, 82.89],
-            zoom: 13
+        const map = DG.map('map', {
+            center: [54.96812, 73.38274],
+            zoom: 20
         });
+
+        DG.marker([54.96812, 73.38274]).addTo(map);
     });
 
 })()
