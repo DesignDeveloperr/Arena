@@ -9,4 +9,25 @@
         DG.marker([54.96812, 73.38274]).addTo(map);
     });
 
+    const images = document.querySelectorAll('img')
+    for (const img of images) {
+        if (img.src.includes('bird.svg')) {
+            img.addEventListener('mouseover', (event) => {
+                event.target.src = '/img/colored_bird.svg'
+            }, {passive: true})
+            img.addEventListener('mouseout', (event) => {
+                event.target.src = '/img/bird.svg'
+            }, {passive:true})
+        }
+
+        if (img.src.includes('light.svg')) {
+            img.addEventListener('mouseover', (event) => {
+                event.target.src = '/img/colored_light.svg'
+            }, {passive: true})
+            img.addEventListener('mouseout', (event) => {
+                event.target.src = '/img/light.svg'
+            }, {passive:true})
+        }
+    }
+
 })()

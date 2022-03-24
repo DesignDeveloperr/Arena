@@ -6,6 +6,7 @@ html {
     color: #EBEBEB;
     background-color: #474747;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -14,6 +15,12 @@ body {
 
 * {
     z-index: 2;
+}
+
+header {
+    background-color: #2A2A2A;
+    width: 1920px;
+    margin: 0 auto;
 }
 
 .background {
@@ -152,4 +159,22 @@ body {
     color: #2A2A2A;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     pointer-events: auto;
+}
+
+.icons {
+    width: 1920px;
+    height: 510px;
+    top: -170px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.icons .icons_part {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 510px;
+    height: 510px;
+    gap: 14px;
+    overflow: hidden;
 }
