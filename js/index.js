@@ -13,19 +13,19 @@
     for (const img of images) {
         if (img.src.includes('bird.svg')) {
             img.addEventListener('mouseover', (event) => {
-                event.target.src = '/img/colored_bird.svg'
+                event.target.src = location.href + 'img/colored_bird.svg'
             }, {passive: true})
             img.addEventListener('mouseout', (event) => {
-                event.target.src = '/img/bird.svg'
+                event.target.src = location.href + 'img/bird.svg'
             }, {passive:true})
         }
 
         if (img.src.includes('light.svg')) {
             img.addEventListener('mouseover', (event) => {
-                event.target.src = '/img/colored_light.svg'
+                event.target.src = location.href + 'img/colored_light.svg'
             }, {passive: true})
             img.addEventListener('mouseout', (event) => {
-                event.target.src = '/img/light.svg'
+                event.target.src = location.href + 'img/light.svg'
             }, {passive:true})
         }
     }
