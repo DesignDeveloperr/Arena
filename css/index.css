@@ -77,7 +77,7 @@ video {
     max-width: 1920px;
     min-height: 840px;
     background-color: white;
-    margin: -60px auto 0 auto;
+    margin: -120px auto 0 auto;
     pointer-events: auto;
     z-index: 0;
 }
