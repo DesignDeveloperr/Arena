@@ -96,7 +96,7 @@ video {
     position: relative;
 }
 
-.photos img {
+.photos img, #photo_first_mobile {
     height: 380px;
     background: radial-gradient(50% 205.28% at 50% 50.13%, rgba(118, 0, 13, 0) 0%, rgba(118, 0, 13, 0.294) 100%);
     mix-blend-mode: normal;
@@ -121,6 +121,7 @@ video {
 
 .photos div:first-child img {
     transform: rotateY(45deg);
+    cursor: pointer;
 }
 
 .photos div:last-child {
@@ -129,6 +130,7 @@ video {
 
 .photos div:last-child img {
     transform: rotateY(-45deg);
+    cursor: pointer;
 }
 
 .photos div:nth-child(2) {
@@ -188,6 +190,11 @@ footer p {
 
 #zones {
     height: 760px;
+}
+
+#zones button {
+    width: 50px;
+    height: 50px;
 }
 
 @media (min-width: 1024px) {

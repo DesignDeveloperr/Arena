@@ -74,5 +74,7 @@
     }
     document.querySelector('#photo_second').onclick = () => updateImages(currentIndex = currentIndex === config.images.length - 1 ? 0 : currentIndex + 1)
     document.querySelector('#photo_last').onclick = () => updateImages(currentIndex = currentIndex - 1 < 0 ? config.images.length - 1 : currentIndex - 1)
+    document.querySelector('#nextPhoto').onclick = () => updateImages(currentIndex = currentIndex === config.images.length - 1 ? 0 : currentIndex + 1)
+    document.querySelector('#prevPhoto').onclick = () => updateImages(currentIndex = currentIndex - 1 < 0 ? config.images.length - 1 : currentIndex - 1)
     updateImages(currentIndex)
 })()
