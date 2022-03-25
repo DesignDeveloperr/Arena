@@ -50,7 +50,7 @@
             <section>
                 <div class="container mx-auto">
                     <div class="grid grid-cols-12">
-                        <div class="col-start-2 col-end-12 video mt-8 bg-gray-300">
+                        <div class="col-start-2 col-end-12 video mt-8">
                             <video autoplay muted loop>
                                 <source src="media/video.mp4" type="video/mp4">
                             </video>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </section>
-            <section class="relative mt-6" id="about">
+            <section class="relative mt-20" id="about">
                 <div class="container mx-auto">
                     <div class="grid grid-cols-12">
                         <div class="col-start-2 col-end-12 md:col-end-9 lg:col-end-7">
@@ -226,10 +226,15 @@
                 <div class="container mx-auto">
                     <div class="grid grid-cols-12">
                         <div class="col-span-12">
-                            <div class="games_zone mx-auto mt-36 mx-auto">
+                            <div class="games_zone mx-auto mt-12 mx-auto mb-4">
                                 <h1 class="uppercase font-black text-2xl absolute top-7 left-16">игровые зоны</h1>
                             </div>
-                            <div class="flex justify-center photos">
+                            <div class="justify-center block lg:hidden">
+                                <div class="w-11/12 mx-auto">
+                                    <img src="img/photo1.webp" width="772" height="381" alt="photo">
+                                </div>
+                            </div>
+                            <div class="justify-center photos hidden lg:flex">
                                 <div>
                                     <img src="img/photo2.webp" width="607" height="407" alt="photo">
                                 </div>
@@ -241,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-start-3 col-end-11 text-right photos_text">
+                        <div class="col-start-1 col-end-12 lg:col-start-3 lg:col-end-11 text-right photos_text">
                             <h2 class="font-bold text-3xl uppercase my-4">Название опции вип-зала</h2>
                             <p class="ml-auto font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
@@ -259,7 +264,7 @@
                                 </div>
                             </div>
                             <div class="col-start-7 md:col-start-10 col-end-12 relative">
-                                <p class="address absolute bottom-48 sm:bottom-32 xl:bottom-20 text-lg font-semibold">КРУГЛОСУТОЧНО<br>пр. Маркса 18, 3 этаж</p>
+                                <p class="address absolute bottom-48 text-lg font-semibold">КРУГЛОСУТОЧНО<br>пр. Маркса 18, 3 этаж</p>
                             </div>
                         </div>
                     </div>
@@ -268,12 +273,12 @@
         </main>
         <footer>
             <div class="container mx-auto">
-                <div class="grid grid-cols-12 mt-32 items-center">
-                    <div class="col-start-1 col-end-4">
-                        <p>© 2022 Киберспорт Арена Авангард<br>Все права защищены</p>
+                <div class="grid grid-cols-12 md:mt-12 items-center">
+                    <div class="col-start-1 col-end-12 md:col-start-1 md:col-end-7 mb-4 md:mb-0">
+                        <p class="text-center md:text-left">© 2022 Киберспорт Арена Авангард<br>Все права защищены</p>
                     </div>
-                    <div class="col-start-11 col-end-13">
-                        <div class="flex gap-4 ml-auto items-center">
+                    <div class="col-start-1 col-end-12 md:col-start-8 md:col-end-13">
+                        <div class="flex justify-center gap-4 ml-auto items-center">
                             <a target="_blank" href="https://instagram.com/arena_cyberomsk"><img src="img/inst.svg" alt="instagram"></a>
                             <a target="_blank" href="https://vk.com/csa_avangard"><img src="img/vk.svg" alt="vk"></a>
                             <a target="_blank" href="https://youtube.com/omskcyberarena"><img src="img/youtube.svg" alt="youtube"></a>
