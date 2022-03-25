@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #2A2A2A;
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -162,7 +162,7 @@ header {
 }
 
 .icons {
-    width: 1920px;
+    max-width: 1920px;
     height: 510px;
     top: -170px;
     left: 0;
