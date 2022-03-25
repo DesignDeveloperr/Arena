@@ -40,4 +40,6 @@
         }
     }
 
+    document.querySelector('#date').innerHTML = document.querySelector('#date').innerHTML.replace('{{date}}', new Date().getFullYear().toString())
+
 })()
