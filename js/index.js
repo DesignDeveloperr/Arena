@@ -1,5 +1,25 @@
 (function () {
 
+    const config = {
+        images: [
+            {
+                url: 'img/photo1.webp',
+                title: 'Зона 1',
+                text: 'Тестовый текст для зоны 1'
+            },
+            {
+                url: 'img/photo2.webp',
+                title: 'Зона 2',
+                text: 'Тестовый текст для зоны 2'
+            },
+            {
+                url: 'img/photo3.webp',
+                title: 'Зона 3',
+                text: 'Тестовый текст для зоны 3'
+            }
+        ]
+    }
+
     DG.then(function () {
         const map = DG.map('map', {
             center: [54.96812, 73.38274],
@@ -42,4 +62,17 @@
 
     document.querySelector('#date').innerHTML = document.querySelector('#date').innerHTML.replace('{{date}}', new Date().getFullYear().toString())
 
+    let currentIndex = 0
+
+    const updateImages = currentIndex => {
+        document.querySelector('#photo_first').src = config.images[currentIndex].url
+        document.querySelector('#photo_second').src = config.images[currentIndex + 1 === config.images.length ? 0 : currentIndex + 1].url
+        document.querySelector('#photo_last').src = config.images[currentIndex - 1 < 0 ? config.images.length - 1 : currentIndex - 1].url
+        document.querySelector('#photo_first_mobile').src = config.images[currentIndex].url
+        document.querySelector('#photo_title').innerHTML = config.images[currentIndex].title
+        document.querySelector('#photo_text').innerHTML = config.images[currentIndex].text
+    }
+    document.querySelector('#photo_second').onclick = () => updateImages(currentIndex = currentIndex === config.images.length - 1 ? 0 : currentIndex + 1)
+    document.querySelector('#photo_last').onclick = () => updateImages(currentIndex = currentIndex - 1 < 0 ? config.images.length - 1 : currentIndex - 1)
+    updateImages(currentIndex)
 })()
