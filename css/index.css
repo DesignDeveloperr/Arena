@@ -178,3 +178,7 @@ header {
     gap: 14px;
     overflow: hidden;
 }
+
+footer p {
+    color: #939393;
+}
