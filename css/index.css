@@ -139,10 +139,6 @@ video {
     height: 200px;
 }
 
-.photos_text p {
-    width: 320px;
-}
-
 .arrival {
     background-image: url("../img/arrival_bg.webp");
     background-repeat: no-repeat;
