@@ -10,13 +10,30 @@
         <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     </head>
     <body>
-        <div class="background" id="background"></div>
         <header>
             <div class="container mx-auto">
                 <div class="grid grid-cols-12">
                     <div class="col-span-12">
                         <nav class="py-4">
-                            <div class="flex justify-between font-medium uppercase">
+                            <div class="block sm:hidden mx-16">
+                                <img class="block mx-auto mb-4" src="img/logo_nav.svg" width="400" height="75" alt="nav_logo">
+                                <div class="font-medium uppercase">
+                                    <a class="block h-fit my-4 mx-auto w-fit" href="#about">о клубе</a>
+                                    <a class="block h-fit my-4 mx-auto w-fit" href="#zones">premium</a>
+                                    <a class="block h-fit my-4 mx-auto w-fit" href="#go">как добраться</a>
+                                    <a class="block h-fit my-4 mx-auto w-fit" href="">контакты</a>
+                                </div>
+                            </div>
+                            <div class="hidden sm:block lg:hidden mx-16">
+                                <img class="block mx-auto mb-4" src="img/logo_nav.svg" width="400" height="75" alt="nav_logo">
+                                <div class="justify-between font-medium uppercase flex">
+                                    <a class="block h-fit my-auto" href="#about">о клубе</a>
+                                    <a class="block h-fit my-auto" href="#zones">premium</a>
+                                    <a class="block h-fit my-auto" href="#go">как добраться</a>
+                                    <a class="block h-fit my-auto" href="">контакты</a>
+                                </div>
+                            </div>
+                            <div class="justify-between font-medium uppercase hidden lg:flex mx-16">
                                 <a class="block h-fit my-auto" href="#about">о клубе</a>
                                 <a class="block h-fit my-auto" href="#zones">premium</a>
                                 <img src="img/logo_nav.svg" width="400" height="75" alt="nav_logo">
@@ -28,12 +45,16 @@
                 </div>
             </div>
         </header>
+        <div class="background" id="background"></div>
         <main>
-            <section class="mt-8">
+            <section class="lg:mt-8">
                 <div class="container mx-auto">
                     <div class="grid grid-cols-12">
-                        <div class="col-start-2 col-end-12 bg-gray-500 video">
-                            <img class="left-16" src="img/logo.svg" width="458" height="118" alt="logo">
+                        <div class="col-start-2 col-end-12 video mt-8">
+                            <video class="my-auto block" width="100%" height="100%" autoplay muted loop>
+                                <source src="media/video.mp4" type="video/mp4">
+                            </video>
+                            <img class="sm:left-8 md:left-16" src="img/logo.svg" width="458" height="118" alt="logo">
                         </div>
                     </div>
                 </div>
@@ -41,17 +62,17 @@
             <section class="mt-8 relative" id="about">
                 <div class="container mx-auto">
                     <div class="grid grid-cols-12">
-                        <div class="col-start-2 col-end-7">
-                            <div class="about mx-auto">
+                        <div class="col-start-2 col-end-12 md:col-end-9 lg:col-end-7">
+                            <div class="about mx-auto lg:mt-12">
                                 <h1 class="uppercase font-black text-2xl absolute bottom-6 left-24">о клубе</h1>
                             </div>
                             <p class="font-light mt-8">Это уникальный, киберспортивный проект, с многолетним опытом управления<br>компьютерными клубами и организации киберспортивных мероприятий. Данное сообщество организовано для популяризации киберспортивной тематики на наших просторах. Арена Cyberomsk является лучшей специализированной киперспортивной площадкой, оснащенной самыми современными компьютерами, которые удовлетворят запросы самого искушенного посетителя.</p>
                         </div>
                     </div>
                 </div>
-                <div class="icons absolute mx-auto overflow-hidden">
+                <div class="icons absolute mx-auto overflow-hidden lg:mt-4">
                     <div class="icons_block w-1/2 ml-auto h-full flex gap-8 overflow-hidden">
-                        <div class="icons_part ml-8">
+                        <div class="icons_part ml-64 md:ml-36 lg:ml-8 hidden sm:flex">
                             <img src="img/bird.svg" width="75" height="40" alt="bird">
                             <img src="img/light.svg" width="27" height="41" alt="light">
                             <img src="img/bird.svg" width="75" height="40" alt="bird">
@@ -125,7 +146,7 @@
                             <img src="img/bird.svg" width="75" height="40" alt="bird">
                         </div>
 
-                        <div class="icons_part">
+                        <div class="icons_part hidden xl:flex">
                             <img src="img/bird.svg" width="75" height="40" alt="bird">
                             <img src="img/light.svg" width="27" height="41" alt="light">
                             <img src="img/bird.svg" width="75" height="40" alt="bird">
@@ -237,8 +258,8 @@
                                     <h1 class="font-black uppercase text-2xl absolute left-6 top-12">как добраться</h1>
                                 </div>
                             </div>
-                            <div class="col-start-10 col-end-12 relative">
-                                <p class="address absolute bottom-20 text-lg font-semibold">КРУГЛОСУТОЧНО<br>пр. Маркса 18, 3 этаж</p>
+                            <div class="col-start-7 md:col-start-10 col-end-12 relative">
+                                <p class="address absolute bottom-48 sm:bottom-32 xl:bottom-20 text-lg font-semibold">КРУГЛОСУТОЧНО<br>пр. Маркса 18, 3 этаж</p>
                             </div>
                         </div>
                     </div>
@@ -253,10 +274,10 @@
                     </div>
                     <div class="col-start-11 col-end-13">
                         <div class="flex gap-4 ml-auto items-center">
-                            <a href="https://instagram.com/arena_cyberomsk"><img src="img/inst.svg" alt="instagram"></a>
-                            <a href="https://vk.com/arenacyberomsk"><img src="img/vk.svg" alt="vk"></a>
-                            <a href="https://youtube.com/omskcyberarena"><img src="img/youtube.svg" alt="youtube"></a>
-                            <a href="https://twitch.tv/arenacyberomsk1"><img src="img/twitch.svg" alt="twitch"></a>
+                            <a target="_blank" href="https://instagram.com/arena_cyberomsk"><img src="img/inst.svg" alt="instagram"></a>
+                            <a target="_blank" href="https://vk.com/csa_avangard"><img src="img/vk.svg" alt="vk"></a>
+                            <a target="_blank" href="https://youtube.com/omskcyberarena"><img src="img/youtube.svg" alt="youtube"></a>
+                            <a target="_blank" href="https://twitch.tv/arenacyberomsk1"><img src="img/twitch.svg" alt="twitch"></a>
                         </div>
                     </div>
                 </div>

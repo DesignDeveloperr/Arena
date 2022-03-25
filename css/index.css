@@ -32,21 +32,22 @@ header {
     background-position-y: -95px;
     margin: 0 auto;
     position: absolute;
-    top: 107px;
     left: 0;
     right: 0;
     z-index: 1;
     pointer-events: none;
 }
 
-.container {
-    max-width: 1170px !important;
+video{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .video {
-    height: 515px;
+    height: 28rem;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .video img {
@@ -171,9 +172,10 @@ header {
 }
 
 .icons .icons_part {
-    display: flex;
     flex-wrap: wrap;
+    width: 510px;
     min-width: 510px;
+    max-width: 510px;
     height: 510px;
     gap: 14px;
     overflow: hidden;
@@ -181,4 +183,10 @@ header {
 
 footer p {
     color: #939393;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1170px !important;
+    }
 }
