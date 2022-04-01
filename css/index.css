@@ -201,3 +201,15 @@ footer p {
         max-width: 1170px !important;
     }
 }
+
+@media (max-width: 1024px) {
+    #photo_first_mobile {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    #photo_first_mobile {
+        height: 200px;
+    }
+}
